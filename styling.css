@@ -1,165 +1,202 @@
 body{
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #0A192F;
-    color: #FFFFFF;
-}
-body::before{
-    content: "";
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle at top right, rgba(100, 255, 218, 0.1), transparent);
-    z-index: -1;
-
-}
-@media(max-width: 768px){
-    body{
-        font-size: 14px;
-    }
-    .container{
-        flex-direction: column;
-    }
-}
-
-h1{
-    color: #CCD6F6;
-
-}
-p{
-    color: #8892B0;
-}
-
-header{
-    background: linear-gradient(to right, #6a11cb, #2575fc);
+    background: linear-gradient(to right, #0f2027, #203a43,#2c5364);
     color: white;
-    
-
 }
 
-h1{
-    align-items: center;
+.companyName{
+    text-align: center;
+    font-size: 25px;
 }
-nav ul{
+header{
+    background-color: blue;
+    width: 100%;
+    height: 60px;
+
+}
+.header nav{
+    margin: 30px;
+}
+.header nav ul{
     display: flex;
-    list-style: none;
     justify-content: center;
 }
-nav ul li{
-    
-    align-items: center;
-    
-    
+.header nav ul li{
+    list-style: none;
 }
-nav ul li a{
-    color: black;
+.header nav ul li a{
+    margin: 20px;
     text-decoration: none;
-    margin-left: 10px;
+    color: white;
+}
+.header nav ul li a:hover{
+    opacity: 0.5;
 }
 
-/* Styling container and it's AuthorsImg,text inside and ViewButton*/
+h1{
+    color: white;
+}
+
+.homeTitle{
+    text-align: center;
+}
+.home-imgBg{
+    background-image: url(carImg/carsMoving.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    height: 300px;
+}
+.homeBg-content{
+    color: blue;
+    text-align: center;
+    padding: 100px;
+}
+
 .container{
     display: flex;
-    background-color: #0A192F;
-}
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 80px;
 
-.pageContent{
-    margin-left: 5%;
-    margin-top: 10%;
 }
-.projectButton{
-    height: 50px;
-    margin-top: 200%;
-    margin-right: 100px;
-    border: 1px solid #64FFDA;
-    background: transparent;
-    border-radius: 5PX;
-    cursor: pointer;
-    color: white;
-    transition: transform 0.3s ease;
-}
-.projectButton:hover{
-    background: #64FFDA;
-    color: #0A192F;
-    transform: translateY(6px);
-}
-.projectButton:not(:hover){
-    transform: translateY(0);
-}
+.top{
+    display: flex;
+    gap: 30px;
+    align-items: center;
 
-.authorsImg{
-    height: 400px;
+}
+.left{
+    transform: rotate(180deg);
+
+}
+.slide{
+    display: flex;
+    position: relative;
     width: 400px;
-    float: right;
-    border-bottom: solid 5px aqua;
-    border-left: solid 5px aqua;
-    margin-left: 200px;
-    border-radius: 20%;
-}
-
-/* Basics of Html,CSS,JavaScript.....*/
-.websiteBasics  ul{
-    display: block;
-}
-.websiteBasics ul li{
-    color: #64FFDA;
-    font-style: italic;
-    
-}
-.websiteBasics ul li::marker{
-    content: "> ";
-    cursor: pointer;
-}
-
-/* styling images in Homepage */
-img{
     height: 200px;
-    width: 200px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: all 1s ease;
     
 }
-img:hover{
-    transform: translateY(10px);
+.image{
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 300px;
+    transition: auto;
+    
 }
-img:not(:hover){
-    transform: translateY(0);
+.frame{
+    width: 400px;
+    height: 200px;
+    overflow: hidden;
+}
+.arrow{
+    cursor: pointer;
+    height: 50px;
+}
+
+.bottom{
+    display: flex;
+    gap: 25px;
+
+
+}
+.button{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid blue;
+    cursor: pointer;
+}
+
+h2{
+    font-style: italic;
+    font-size: large;
+}
+
+.brian-img{
+    height: 80px;
+    width: 80px;
+    border-radius: 60px;
 }
 p{
-    margin-left: 10px;
+    font-style: italic;
+    font-size: large;
 }
 
+/* FOOTER */
+footer{
+    background-color: blue;
+    height: 200px;
 
-.footer{
-    background: linear-gradient(to right, #6911cb, #2575fc);
-    height: 150px;
 
 }
+.footer nav{
+    margin: 30px;
+}
+.footer nav ul{
+    display: flex;
+    justify-content: center;
+}
+.footer nav ul li{
+    list-style: none;
+}
+.footer nav ul li a{
+    font-style: italic;
+    margin: 20px;
+    color: white;
+    text-decoration: none;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.footer nav ul li a:hover{
+    opacity: 1;
+}
+
+/* Footer logos */
 .footerLogos{
-    padding: 50px 30px 2px;
-
+    padding: 70px 30px 20px;
 }
 .socialIcons{
     display: flex;
     justify-content: center;
 }
 .socialIcons a{
-    padding: 5px;
     text-decoration: none;
+    padding: 5px;
     background-color: white;
     margin: 10px;
     border-radius: 50%;
-
-}
-.socialIcons a:hover{
-    transition: 0.5s;
-    background-color: #111;
 }
 .socialIcons a i{
     font-size: 20px;
     opacity: 0.9;
 }
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
 .socialIcons a i:hover{
     color: white;
     transition: 0.5s;
+}
+
+/*Styling background image (about page)*/
+.bg-img{
+    background-image: url(carImg/car2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: contain;
+    height: 300px;
+}
+.bgImage-content{
+    text-align: center;
+    color: orange;
+    padding-top: 200px;
+    font-size: 35px;
 }
