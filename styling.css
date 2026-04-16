@@ -1,0 +1,165 @@
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0A192F;
+    color: #FFFFFF;
+}
+body::before{
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at top right, rgba(100, 255, 218, 0.1), transparent);
+    z-index: -1;
+
+}
+@media(max-width: 768px){
+    body{
+        font-size: 14px;
+    }
+    .container{
+        flex-direction: column;
+    }
+}
+
+h1{
+    color: #CCD6F6;
+
+}
+p{
+    color: #8892B0;
+}
+
+header{
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    
+
+}
+
+h1{
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+nav ul li{
+    
+    align-items: center;
+    
+    
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+/* Styling container and it's AuthorsImg,text inside and ViewButton*/
+.container{
+    display: flex;
+    background-color: #0A192F;
+}
+
+.pageContent{
+    margin-left: 5%;
+    margin-top: 10%;
+}
+.projectButton{
+    height: 50px;
+    margin-top: 200%;
+    margin-right: 100px;
+    border: 1px solid #64FFDA;
+    background: transparent;
+    border-radius: 5PX;
+    cursor: pointer;
+    color: white;
+    transition: transform 0.3s ease;
+}
+.projectButton:hover{
+    background: #64FFDA;
+    color: #0A192F;
+    transform: translateY(6px);
+}
+.projectButton:not(:hover){
+    transform: translateY(0);
+}
+
+.authorsImg{
+    height: 400px;
+    width: 400px;
+    float: right;
+    border-bottom: solid 5px aqua;
+    border-left: solid 5px aqua;
+    margin-left: 200px;
+    border-radius: 20%;
+}
+
+/* Basics of Html,CSS,JavaScript.....*/
+.websiteBasics  ul{
+    display: block;
+}
+.websiteBasics ul li{
+    color: #64FFDA;
+    font-style: italic;
+    
+}
+.websiteBasics ul li::marker{
+    content: "> ";
+    cursor: pointer;
+}
+
+/* styling images in Homepage */
+img{
+    height: 200px;
+    width: 200px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    
+}
+img:hover{
+    transform: translateY(10px);
+}
+img:not(:hover){
+    transform: translateY(0);
+}
+p{
+    margin-left: 10px;
+}
+
+
+.footer{
+    background: linear-gradient(to right, #6911cb, #2575fc);
+    height: 150px;
+
+}
+.footerLogos{
+    padding: 50px 30px 2px;
+
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    padding: 5px;
+    text-decoration: none;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+
+}
+.socialIcons a:hover{
+    transition: 0.5s;
+    background-color: #111;
+}
+.socialIcons a i{
+    font-size: 20px;
+    opacity: 0.9;
+}
+.socialIcons a i:hover{
+    color: white;
+    transition: 0.5s;
+}
